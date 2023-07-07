@@ -1,0 +1,17 @@
+<div class="welcome_container">
+  <mat-grid-list cols="3">
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile >
+
+    <span *ngIf="isClicked">
+      <app-register></app-register>
+    </span>
+      <span *ngIf="!isClicked">
+      <app-login [status]="isClicked" (statusChange)="bindOperation($event)" ></app-login>
+    </span>
+    </mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+  </mat-grid-list>
+
+
+</div>

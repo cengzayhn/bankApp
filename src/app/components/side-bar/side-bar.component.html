@@ -1,0 +1,8 @@
+<div class="sidebar_container">
+  <h2 style="margin-top: 25px">SIDEBAR-LOGO</h2>
+  <div  *ngFor="let i of sidebarComponents" class="sidebar_components">
+    <div class="sidebar_component" (click)="handleClick($event)">
+      {{i}}
+    </div>
+  </div>
+</div>
